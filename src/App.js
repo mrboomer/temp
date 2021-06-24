@@ -1,28 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-const useFetch = (url) => {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch(url).then(async (res) => {
-      if (res.status !== 200) {
-        setData("Fetch Error");
-      }
-
-      const data = await res.json();
-
-      setData(data);
-    });
-  }, [setData, url]);
-
-  return [data];
-};
-
-const Event = ({ itemName, logo, startTime, location, min }) => {
+function Event({ itemName, logo, startTime, location, min }) {
   const eventStyle = {
     display: "flex",
     padding: "15px 0",
-    borderBottom: "1px solid #ebeef1"
+    borderBottom: "1px solid #ebeef1",
   };
 
   const imgContainerStyle = {
@@ -30,12 +12,12 @@ const Event = ({ itemName, logo, startTime, location, min }) => {
     marginRight: "25px",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   };
 
   const imageStyle = {
-    maxHeight: "100px"
-  }
+    maxHeight: "100px",
+  };
 
   const infoContainerStyle = {
     flex: 5,
@@ -54,8 +36,8 @@ const Event = ({ itemName, logo, startTime, location, min }) => {
     padding: "10px",
     width: "225px",
     border: 0,
-    color: "white"
-  }
+    color: "white",
+  };
 
   return (
     <div style={eventStyle}>
@@ -72,11 +54,9 @@ const Event = ({ itemName, logo, startTime, location, min }) => {
       </div>
     </div>
   );
-};
+}
 
-const App = () => {
-  const [events] = useFetch("/events");
-
+function App() {
   // inline styles
   const containerStyle = {
     display: "flex",
@@ -100,18 +80,12 @@ const App = () => {
     flex: 4,
   };
 
-  if (!events) return "Loading ..."
-
   return (
     <div id="app" style={containerStyle}>
       <div style={{ ...componentStyle, ...filtersStyle }} />
-      <div style={{ ...componentStyle, ...eventsStyle }}>
-        {events.map((event, index) => (
-          <Event key={index} {...event} />
-        ))}
-      </div>
+      <div style={{ ...componentStyle, ...eventsStyle }} />
     </div>
   );
-};
+}
 
 export default App;
