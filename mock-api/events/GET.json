@@ -1,0 +1,86 @@
+[
+  {
+    "seasonCode": "B14",
+    "itemCode": "B01",
+    "itemName": "UNC - Asheville (B01)",
+    "location": "Stanford Stadium",
+    "startTime": "1628906400",
+    "type": "S",
+    "price": 150,
+    "min": 150,
+    "max": 500,
+    "logo": "https://s3.us-west-2.amazonaws.com/pachtml-dev/www/_default/images/logos/default.png"
+  },
+  {
+    "seasonCode": "B14",
+    "itemCode": "B04",
+    "itemName": "Eastern Washington (B04)",
+    "location": "Stanford Stadium",
+    "startTime": "1629511200",
+    "type": "S",
+    "price": 30,
+    "min": 30,
+    "max": 100,
+    "logo": "https://s3.us-west-2.amazonaws.com/pachtml-dev/www/_default/images/logos/default.png"
+  },
+  {
+    "seasonCode": "B14",
+    "itemCode": "B05",
+    "itemName": "Northern Illinois (B05)",
+    "location": "Stanford Stadium",
+    "startTime": "1630116000",
+    "type": "S",
+    "price": 240,
+    "min": 240,
+    "max": 350,
+    "logo": "https://s3.us-west-2.amazonaws.com/pachtml-dev/www/_default/images/logos/default.png"
+  },
+  {
+    "seasonCode": "B14",
+    "itemCode": "B03",
+    "itemName": "Wisconsin - Green Bay (B03)",
+    "location": "Stanford Stadium",
+    "startTime": "1628906400",
+    "type": "S",
+    "price": 410,
+    "min": 410,
+    "max": 750,
+    "logo": "https://s3.us-west-2.amazonaws.com/pachtml-dev/www/_default/images/logos/default.png"
+  },
+  {
+    "seasonCode": "B14",
+    "itemCode": "B02",
+    "itemName": "Drake (B02)",
+    "location": "Stanford Stadium",
+    "startTime": "1628906400",
+    "type": "S",
+    "price": 325,
+    "min": 325,
+    "max": 525,
+    "logo": "https://s3.us-west-2.amazonaws.com/pachtml-dev/www/_default/images/logos/default.png"
+  },
+  {
+    "seasonCode": "B14",
+    "itemCode": "MISC1",
+    "itemName": "Hot Dog",
+    "location": "Stanford Stadium",
+    "startTime": "1628906400",
+    "type": "M",
+    "price": 8,
+    "min": 8,
+    "max": 8,
+    "logo": "https://s3.us-west-2.amazonaws.com/pachtml-dev/www/_default/images/logos/default.png"
+  },
+  {
+    "seasonCode": "B14",
+    "itemCode": "2PKM",
+    "itemName": "2019 Football Season Tickets - Mult Allocations",
+    "location": "Stanford Stadium",
+    "startTime": "1628906400",
+    "type": "F",
+    "price": 250,
+    "min": 250,
+    "max": 750,
+    "logo": "https://s3.us-west-2.amazonaws.com/pachtml-dev/www/_default/images/logos/default.png"
+  }
+]

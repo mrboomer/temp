@@ -1,0 +1,36 @@
+{
+  "name": "event-view-exercise",
+  "proxy": "http://localhost:9000/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "run-p react-app mock-api",
+    "react-app": "react-scripts start",
+    "mock-api": "node ./mock-api/app.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "connect-api-mocker": "^1.10.0",
+    "express": "^4.17.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
